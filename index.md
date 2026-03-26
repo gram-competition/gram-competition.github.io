@@ -4,6 +4,7 @@ layout: default
 
 [![](https://img.shields.io/badge/Website-GRaM_workshop-white)](https://gram-workshop.github.io)
 [![](https://img.shields.io/badge/GitHub-Competition_repository-black)](https://github.com/gram-competition/iclr-2026)
+[![](https://img.shields.io/badge/Hugging_Face-Dataset-yellow)](https://huggingface.co/datasets/gram-competition/warped-ifw)
 
 <img src="assets/logo_beyondmath.svg" width="50%">
 
@@ -31,7 +32,7 @@ In practice, this can be any model that takes as input a discrete velocity field
 Graph neural networks or transformers could be suitable models for this task.
 
 Aerodynamics usually decompose into low-frequency ("laminar") and high-frequency ("turbulent") components.
-The preceding velocity field often provides an excellent prior for the low-frequency components of the following velocity field.
+The preceding velocity field already provides an excellent prior for the low-frequency components of the following velocity field.
 For this reason, we expect the main difficulty of this challenge to be estimation of high-frequency components in the airflow.
 
 # Dataset
@@ -66,12 +67,12 @@ Dataset
     ├── velocity_in: (5, 100k, 3)
     └── velocity_out: (5, 100k, 3)
 ```
-The dataset can be downloaded here (coming soon).
+The dataset can be downloaded from Hugging Face (link above).
 
 # Ranking
 
 Submissions will be evaluated on a held-out test split.
-This means that all available data can be used for training by participants.
+This means that all available data can be used by participants for training.
 We do not disclose the specific evaluation metric, but it will measure accuracy, i.e., similarity of the estimated 3D velocity fields and the ground truth.
 
 # Organizers
