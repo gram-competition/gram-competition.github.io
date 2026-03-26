@@ -10,7 +10,7 @@ layout: default
 This year's competition hosted in conjunction with the Workshop on Geometry-grounded Representation Learning and Generative Modeling (GRaM) will be a **benchmark challenge**.
 We have prepared a 3D dataset of geometries inspired by the front wing of a Formula 1 car for which BeyondMath kindly provided (transient) simulations of airflow.
 
-<img src="assets/front_wing.png" height="180vw"><video src="assets/airflow.mp4" controls height="180vw"></video>
+<img src="assets/front_wing.png" height="180vw"><video src="assets/airflow.mp4" controls autoplay muted loop playsinline preload="auto" height="180vw"></video>
 
 The challenge is about generating airflow at future time points based on the geometry and airflow at previous time points.
 Submissions will take the form of **pull requests** to the competition repository (link above) and you can participate as a team.
@@ -37,6 +37,7 @@ For this reason, we expect the main difficulty of this challenge to be estimatio
 # Dataset
 
 Our dataset consists of geometries made up of one, two or three differently-sized airfoils at randomly sampled relative positions and pitch angles.
+The airfoil geometry is derived from the Imperial Front Wing (IFW), a Formula 1-style front wing CAD geometry developed at Imperial College London \[[Buscariolo, 2019](https://data.hpc.imperial.ac.uk/resolve/?doi=6049)\].
 Airflow was simulated based on a constant freestream velocity in 181 of these geometries and we extracted five time windows from each simulation for our dataset.
 
 <img src="assets/geometries.png">
@@ -72,3 +73,23 @@ The dataset can be downloaded here (coming soon).
 Submissions will be evaluated on a held-out test split.
 This means that all available data can be used for training by participants.
 We do not disclose the specific evaluation metric, but it will measure accuracy, i.e., similarity of the estimated 3D velocity fields and the ground truth.
+
+# Organizers
+
+<div class="organisers-grid">
+  <div class="organiser-card">
+    <img class="organiser-photo" src="assets/organisers/alison_pouplin.jpeg" alt="Alison Pouplin">
+    <div class="organiser-name">Alison Pouplin</div>
+    <div class="organiser-affiliation">Bayer</div>
+  </div>
+  <div class="organiser-card">
+    <img class="organiser-photo" src="assets/organisers/gavin_seegoolam.jpeg" alt="Gavin Seegoolam">
+    <div class="organiser-name">Gavin Seegoolam</div>
+    <div class="organiser-affiliation">BeyondMath</div>
+  </div>
+  <div class="organiser-card">
+    <img class="organiser-photo" src="assets/organisers/julian_suk.jpg" alt="Julian Suk">
+    <div class="organiser-name">Julian Suk</div>
+    <div class="organiser-affiliation">TU Munich</div>
+  </div>
+</div>

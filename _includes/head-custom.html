@@ -1,3 +1,42 @@
 <script id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-mml-chtml.js">
 </script>
+
+<style>
+  .organisers-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 28px 36px;
+    align-items: start;
+    justify-items: center;
+    margin-top: 18px;
+    margin-bottom: 22px;
+  }
+
+  .organiser-card {
+    text-align: center;
+    max-width: 220px;
+  }
+
+  .organiser-photo {
+    width: 140px;
+    height: 140px;
+    border-radius: 9999px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 10px;
+  }
+
+  .organiser-name {
+    font-weight: 700;
+    color: #4a4a4a;
+    line-height: 1.2;
+    margin-top: 6px;
+  }
+
+  .organiser-affiliation {
+    color: #6b6b6b;
+    line-height: 1.2;
+    margin-top: 6px;
+  }
+</style>
