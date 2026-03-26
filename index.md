@@ -8,7 +8,7 @@ layout: default
 <img src="assets/logo_beyondmath.svg" width="50%">
 
 This year's competition hosted in conjunction with the Workshop on Geometry-grounded Representation Learning and Generative Modeling (GRaM) will be a **benchmark challenge**.
-We have prepared a 3D dataset of geometries inspired by the front wing of a Formula 1 car for which BeyondMath kindly provided (transient) simulations of airflow.
+We have prepared a 3D dataset of geometries inspired by the front wing of a Formula 1 car for which BeyondMath kindly provided (transient) simulations of airflow specifically set-up for an academic-style challenge.
 
 <img src="assets/front_wing.png" height="180vw"><video src="assets/airflow.mp4" controls autoplay muted loop playsinline preload="auto" height="180vw"></video>
 
