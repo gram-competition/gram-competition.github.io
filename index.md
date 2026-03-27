@@ -3,18 +3,22 @@ layout: default
 ---
 
 [![](https://img.shields.io/badge/Website-GRaM_workshop-white)](https://gram-workshop.github.io)
-[![](https://img.shields.io/badge/GitHub-Competition_repository-black)](https://github.com/gram-competition/iclr-2026)
+[![](https://img.shields.io/badge/GitHub-Submission_portal-black)](https://github.com/gram-competition/iclr-2026)
 [![](https://img.shields.io/badge/Hugging_Face-Dataset-yellow)](https://huggingface.co/datasets/gram-competition/warped-ifw)
 
-<img src="assets/logo_beyondmath.svg" width="50%">
+<img src="assets/logos/beyondmath.svg" height="60vw">&nbsp;&nbsp;&nbsp;<img src="assets/logos/mcml.svg" height="60vw">
 
 This year's competition hosted in conjunction with the Workshop on Geometry-grounded Representation Learning and Generative Modeling (GRaM) will be a **benchmark challenge**.
-We have prepared a 3D dataset of geometries inspired by the front wing of a Formula 1 car for which BeyondMath kindly provided (transient) simulations of airflow specifically set-up for an academic-style challenge.
+We have prepared a dataset of 3D geometries inspired by the front wing of a Formula 1 car for which BeyondMath kindly provided transient simulations of airflow specifically set-up for an academic-style challenge.
 
 <img src="assets/front_wing.png" height="180vw"><video src="assets/airflow.mp4" controls autoplay muted loop playsinline preload="auto" height="180vw"></video>
 
 The challenge is about generating airflow at future time points based on the geometry and airflow at previous time points.
-Submissions will take the form of **pull requests** to the competition repository (link above) and you can participate as a team.
+The winner of the competition is going to receive the *MCML Award* consisting of **500 €** in prize money.
+Furthermore, we are going to publish a description of the challenge and all valid submissions in the workshop proceedings and participants will have the option to be co-authors.
+
+Submissions will take the form of **pull requests** to our GitHub repository (link above) and you can participate as a team.
+For questions, open an issue on GitHub or email [gram.competition@proton.me](mailto:gram.competition@proton.me).
 
 Deadline is on **April 22, 2026 (AoE)**.
 
@@ -32,17 +36,17 @@ In practice, this can be any model that takes as input a discrete velocity field
 Graph neural networks or transformers could be suitable models for this task.
 
 Aerodynamics usually decompose into low-frequency ("laminar") and high-frequency ("turbulent") components.
-The preceding velocity field already provides an excellent prior for the low-frequency components of the following velocity field.
+The preceding velocity field already provides an excellent prior for the low-frequency components of the following dynamics.
 For this reason, we expect the main difficulty of this challenge to be estimation of high-frequency components in the airflow.
 
 # Dataset
 
-Our dataset consists of geometries made up of one, two or three differently-sized airfoils at randomly sampled relative positions and pitch angles.
+Our dataset consists of 3D geometries made up of one, two or three differently-sized airfoils at randomly-sampled relative positions and pitch angles, thereby spanning a rich space of geometric variation.
 The airfoil geometry is derived from the Imperial Front Wing (IFW), a Formula 1-style front wing CAD geometry developed at Imperial College London \[[Buscariolo, 2019](https://data.hpc.imperial.ac.uk/resolve/?doi=6049)\].
-Airflow was simulated based on a constant freestream velocity in 181 of these geometries and we extracted five time windows from each simulation for our dataset.
 
 <img src="assets/geometries.png">
 
+Airflow was simulated based on a constant freestream velocity in 181 of these geometries and we extracted five time windows from each simulation for our dataset.
 In order to make the simulation results easier to work with, we subsampled a fixed number of points from the velocity field.
 The airfoil surface is encoded as a subset of those points.
 
