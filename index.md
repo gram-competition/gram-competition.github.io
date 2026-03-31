@@ -41,7 +41,7 @@ For this reason, we expect the main difficulty of this challenge to be estimatio
 
 # Dataset
 
-Our dataset consists of 3D geometries made up of one, two or three differently-sized airfoils at randomly-sampled relative positions and pitch angles, thereby spanning a rich space of geometric variation.
+Our dataset consists of 3D geometries made up of one, two or three differently-sized airfoils at randomly-sampled relative positions and pitch angles, thereby spanning a rich space of geometric variation.<sup>[†](#motivation-and-disclaimer)</sup>
 The airfoil geometry is derived from the Imperial Front Wing (IFW), a Formula 1-style front wing CAD geometry developed at Imperial College London \[[Buscariolo, 2019](https://data.hpc.imperial.ac.uk/resolve/?doi=6049)\].
 
 <img src="assets/geometries.png">
@@ -78,6 +78,12 @@ The dataset can be downloaded from Hugging Face (link above).
 Submissions will be evaluated on a held-out test split.
 This means that all available data can be used by participants for training.
 We do not disclose the specific evaluation metric, but it will measure accuracy, i.e., similarity of the estimated 3D velocity fields and the ground truth.
+
+# Disclaimer
+
+The aim of the challenge was to have a task involving sequential point-cloud prediction. Fluids were the first thing that came to mind. We've sliced a small part of the IFW and then scaled it anisotropically to create a new set of warped geometries. The data is designed in this specific way for the workshop competition (GRaM) rather than a fully experimentally validated CFD reference dataset. We targeted a consistent \\(y^+\\) regime and a lightweight setup, balancing accessibility for workshop participants with suitability for popular learning-based methods and comparative evaluation, i.e., keeping the cell count low but academically interesting enough in the broader context of what the workshop is about. This allows focus on the development of the geometric method.
+
+The aim is to explore learning for the task of sequential point-cloud data on a fun and interesting geometrical set of variations.
 
 # Organizers
 
