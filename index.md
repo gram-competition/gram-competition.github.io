@@ -6,7 +6,10 @@ layout: default
 [![](https://img.shields.io/badge/GitHub-Submission_portal-black)](https://github.com/gram-competition/iclr-2026)
 [![](https://img.shields.io/badge/Hugging_Face-Dataset-yellow)](https://huggingface.co/datasets/gram-competition/warped-ifw)
 
-<img src="assets/logos/beyondmath.svg" height="60vw">&nbsp;&nbsp;&nbsp;<img src="assets/logos/mcml.svg" height="60vw">
+<div style="display: flex; justify-content: center; align-items: center; gap: 48px; margin-top: 24px; flex-wrap: wrap;">
+  <img src="assets/logos/beyondmath.svg" height="60vw">
+  <img src="assets/logos/mcml.svg" height="60vw">
+</div>
 
 This year's competition hosted in conjunction with the Workshop on Geometry-grounded Representation Learning and Generative Modeling (GRaM) will be a **benchmark challenge**.
 We have prepared a dataset of 3D geometries inspired by the front wing of a Formula 1 car for which BeyondMath kindly provided transient simulations of airflow specifically set-up for an academic-style challenge.
@@ -18,7 +21,7 @@ The winner of the competition is going to receive the *MCML Award* consisting of
 Furthermore, we are going to publish a description of the challenge and all valid submissions in the workshop proceedings and participants will have the option to be co-authors.
 
 Submissions will take the form of **pull requests** to our GitHub repository (link above) and you can participate as a team.
-For questions, open an issue on GitHub or email [gram.competition@proton.me](mailto:gram.competition@proton.me).
+For questions, open an issue on GitHub or send us an [email](mailto:gram.competition@proton.me).
 
 Deadline is on **April 22, 2026 (AoE)**.
 
@@ -41,7 +44,7 @@ For this reason, we expect the main difficulty of this challenge to be estimatio
 
 # Dataset
 
-Our dataset consists of 3D geometries made up of one, two or three differently-sized airfoils at randomly-sampled relative positions and pitch angles, thereby spanning a rich space of geometric variation.<sup>[†](#motivation-and-disclaimer)</sup>
+Our dataset consists of 3D geometries made up of one, two or three differently-sized airfoils at randomly-sampled relative positions and pitch angles, thereby spanning a rich space of geometric variation.<sup>[†](#disclaimer)</sup>
 The airfoil geometry is derived from the Imperial Front Wing (IFW), a Formula 1-style front wing CAD geometry developed at Imperial College London \[[Buscariolo, 2019](https://data.hpc.imperial.ac.uk/resolve/?doi=6049)\].
 
 <img src="assets/geometries.png">
@@ -85,7 +88,7 @@ The aim of the challenge was to have a task involving sequential point-cloud pre
 
 The aim is to explore learning for the task of sequential point-cloud data on a fun and interesting geometrical set of variations.
 
-# Organizers
+# Organisers
 
 <div class="organisers-grid">
   <div class="organiser-card">
