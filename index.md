@@ -25,6 +25,36 @@ For questions, open an issue on GitHub or send us an [email](mailto:gram.competi
 
 Deadline is on **April 22, 2026 (AoE)**.
 
+# Results
+
+We evaluated submissions via [relative \\(\mathrm{L}^2\\) error](https://github.com/gram-competition/iclr-2026/blob/main/main.py#L47).
+Below we provide mean and standard deviation across the [test split](https://huggingface.co/datasets/gram-competition/warped-ifw/blob/main/test_split.csv).
+
+| Pull request | Model | Relative \\(\mathrm{L}^2\\) error |
+| --- | --- | --- |
+| \#14 | SmoothSplatNet | 0.048 \\(\pm\\) 0.0146 |
+| \#17 | CDFDoubleGridNet | 0.0498 \\(\pm\\) 0.0144 |
+| \#19 | VRTEnsemble | 0.051 \\(\pm\\) 0.0151 |
+| \#4 | Kagent | 0.0553 \\(\pm\\) 0.0168 |
+| \#9 | ResMLP | 0.056 \\(\pm\\) 0.0169 |
+| \#2 | EnsembleSpatioTemporalModels | 0.0589 \\(\pm\\) 0.0184 |
+| \#21 | TransolverAR | 0.0638 \\(\pm\\) 0.0198 |
+| \#13 | TransolverCorrector | 0.0739 \\(\pm\\) 0.0203 |
+| \#10 | gEGNO | 0.0819 \\(\pm\\) 0.0233 |
+| \#16 | FiniteGraphV4 | 0.0837 \\(\pm\\) 0.023 |
+| \#20 | AB-UPT | 0.0838 \\(\pm\\) 0.0227 |
+| \#6 | AirFormer | 0.085 \\(\pm\\) 0.0227 |
+| \#12 | AeroChronoMixer | 0.0892 \\(\pm\\) 0.0232 |
+| \#5 | Transolver Residual | 0.0896 \\(\pm\\) 0.0244 |
+| \#11 | LeversTailV2Submission | 0.097 \\(\pm\\) 0.023 |
+| \#8 | ImprovedMLP | 0.1002 \\(\pm\\) 0.0238 |
+| \#7 | FNO3DTimeRes | 0.1224 \\(\pm\\) 0.0218 |
+| \#25 | DeltaGraph | 0.1258 \\(\pm\\) 0.0278 |
+| \#23 | SpatiotemporalMNO | 0.1292 \\(\pm\\) 0.0284 |
+| \#18 | WaveletLatentOperator | 0.1978 \\(\pm\\) 0.0163 |
+| \#3 | PerceiverFlow | 0.2436 \\(\pm\\) 0.0406 |
+| \#24 | ZonalMoE | 0.5807 \\(\pm\\) 0.1091 |
+
 # Challenge
 
 Consider a 3D velocity field \\(u(t, x)\\) of airflow around an airfoil where \\(t_0 \le t \le t_1\\) and \\(x \in \Omega \subset \mathbb{R}^3\\).
