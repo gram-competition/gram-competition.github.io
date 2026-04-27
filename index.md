@@ -27,33 +27,34 @@ Deadline is on **April 22, 2026 (AoE)**.
 
 # Results
 
+In total, we got 22 valid submissions.
 We evaluated submissions via [relative \\(\mathrm{L}^2\\) error](https://github.com/gram-competition/iclr-2026/blob/main/main.py#L47).
 Below we provide mean and standard deviation across the [test split](https://huggingface.co/datasets/gram-competition/warped-ifw/blob/main/test_split.csv).
 
-| Pull request | Model | Relative \\(\mathrm{L}^2\\) error |
-| --- | --- | --- |
-| \#14 | SmoothSplatNet | 0.048 \\(\pm\\) 0.0146 |
-| \#17 | CDFDoubleGridNet | 0.0498 \\(\pm\\) 0.0144 |
-| \#19 | VRTEnsemble | 0.051 \\(\pm\\) 0.0151 |
-| \#4 | Kagent | 0.0553 \\(\pm\\) 0.0168 |
-| \#9 | ResMLP | 0.056 \\(\pm\\) 0.0169 |
-| \#2 | EnsembleSpatioTemporalModels | 0.0589 \\(\pm\\) 0.0184 |
-| \#21 | TransolverAR | 0.0638 \\(\pm\\) 0.0198 |
-| \#13 | TransolverCorrector | 0.0739 \\(\pm\\) 0.0203 |
-| \#10 | gEGNO | 0.0819 \\(\pm\\) 0.0233 |
-| \#16 | FiniteGraphV4 | 0.0837 \\(\pm\\) 0.023 |
-| \#20 | AB-UPT | 0.0838 \\(\pm\\) 0.0227 |
-| \#6 | AirFormer | 0.085 \\(\pm\\) 0.0227 |
-| \#12 | AeroChronoMixer | 0.0892 \\(\pm\\) 0.0232 |
-| \#5 | Transolver Residual | 0.0896 \\(\pm\\) 0.0244 |
-| \#11 | LeversTailV2Submission | 0.097 \\(\pm\\) 0.023 |
-| \#8 | ImprovedMLP | 0.1002 \\(\pm\\) 0.0238 |
-| \#7 | FNO3DTimeRes | 0.1224 \\(\pm\\) 0.0218 |
-| \#25 | DeltaGraph | 0.1258 \\(\pm\\) 0.0278 |
-| \#23 | SpatiotemporalMNO | 0.1292 \\(\pm\\) 0.0284 |
-| \#18 | WaveletLatentOperator | 0.1978 \\(\pm\\) 0.0163 |
-| \#3 | PerceiverFlow | 0.2436 \\(\pm\\) 0.0406 |
-| \#24 | ZonalMoE | 0.5807 \\(\pm\\) 0.1091 |
+| Ranking | Pull request | Model | Relative \\(\mathrm{L}^2\\) error |
+| --- | --- | --- | --- |
+| 1st | \#14 | SmoothSplatNet | 0.048 \\(\pm\\) 0.0146 |
+| 2nd | \#17 | CDFDoubleGridNet | 0.0498 \\(\pm\\) 0.0144 |
+| 3rd | \#19 | VRTEnsemble | 0.051 \\(\pm\\) 0.0151 |
+| 4th | \#4 | Kagent | 0.0553 \\(\pm\\) 0.0168 |
+| 5th | \#9 | ResMLP | 0.056 \\(\pm\\) 0.0169 |
+| 6th | \#2 | EnsembleSpatioTemporalModels | 0.0589 \\(\pm\\) 0.0184 |
+| 7th | \#21 | TransolverAR | 0.0638 \\(\pm\\) 0.0198 |
+| 8th | \#13 | TransolverCorrector | 0.0739 \\(\pm\\) 0.0203 |
+| 9th | \#10 | gEGNO | 0.0819 \\(\pm\\) 0.0233 |
+| 10th | \#16 | FiniteGraphV4 | 0.0837 \\(\pm\\) 0.023 |
+| 11th | \#20 | AB-UPT | 0.0838 \\(\pm\\) 0.0227 |
+| 12th | \#6 | AirFormer | 0.085 \\(\pm\\) 0.0227 |
+| 13th | \#12 | AeroChronoMixer | 0.0892 \\(\pm\\) 0.0232 |
+| 14th | \#5 | Transolver Residual | 0.0896 \\(\pm\\) 0.0244 |
+| 15th | \#11 | LeversTailV2Submission | 0.097 \\(\pm\\) 0.023 |
+| 16th | \#8 | ImprovedMLP | 0.1002 \\(\pm\\) 0.0238 |
+| 17th | \#7 | FNO3DTimeRes | 0.1224 \\(\pm\\) 0.0218 |
+| 18th | \#25 | DeltaGraph | 0.1258 \\(\pm\\) 0.0278 |
+| 19th | \#23 | SpatiotemporalMNO | 0.1292 \\(\pm\\) 0.0284 |
+| 20th | \#18 | WaveletLatentOperator | 0.1978 \\(\pm\\) 0.0163 |
+| 21st | \#3 | PerceiverFlow | 0.2436 \\(\pm\\) 0.0406 |
+| 22nd | \#24 | ZonalMoE | 0.5807 \\(\pm\\) 0.1091 |
 
 # Challenge
 
